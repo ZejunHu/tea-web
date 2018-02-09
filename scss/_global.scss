@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  @include serif-font;
+  @include assistant;
 }
 
 hr {
@@ -27,13 +27,19 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
+h1 {
+  @include berkshire-swash;
+  font-size: 48px;
+}
+h2 {
+  @include assistant;
+  font-size: 24px;
+}
+h3 {
+  @include times-new-roman;
+  font-size: 24px;
+  font-style: italic;
+  color: $subtitle;
 }
 
 .bg-primary {

@@ -10,9 +10,15 @@
   -o-background-size: cover;
   background-size: cover;
 }
-@mixin serif-font() {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+@mixin assistant() {
+  font-family: 'Assistant', serif;
 }
-@mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+@mixin berkshire-swash() {
+  font-family: 'Berkshire Swash', serif;
+}
+@mixin times-new-roman() {
+  font-family: "Times New Roman", Times, serif;
+}
+@mixin satisfy() {
+  font-family: 'Satisfy', serif;
 }
