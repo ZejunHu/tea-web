@@ -20,10 +20,10 @@ hr.light {
 }
 
 a {
-  color: $primary;
   @include transition-all;
+  color: $subtitle;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($button-hover, .1);
   }
 }
 
@@ -42,12 +42,20 @@ h3 {
   color: $subtitle;
 }
 
+footer {
+  height: 24px;
+}
+
 .bg-primary {
-  background-color: $primary !important;
+  background-color: white !important;
 }
 
 .bg-dark {
   background-color: $gray-900 !important;
+}
+
+.bg-gray {
+  background-color: $mygray !important;
 }
 
 .text-faded {

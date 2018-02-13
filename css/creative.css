@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #FAFAFA;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  color: #D3A654;
 }
 
 a:hover {
-  color: #fafafa;
+  color: #6abab9;
 }
 
 h1 {
@@ -46,12 +46,20 @@ h3 {
   color: #D3A654;
 }
 
+footer {
+  height: 24px;
+}
+
 .bg-primary {
-  background-color: #FAFAFA !important;
+  background-color: white !important;
 }
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-gray {
+  background-color: #E9E9E9 !important;
 }
 
 .text-faded {
@@ -230,6 +238,16 @@ header.masthead p {
   max-width: 400px;
 }
 
+.product-bg {
+  border-bottom: 8px solid #6ABAB9;
+}
+
+@media (min-width: 992px) {
+  .product-bg {
+    background: linear-gradient(white 60%, #E9E9E9 40%);
+  }
+}
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -299,6 +317,85 @@ header.masthead p {
   font-size: 36px;
 }
 
+.bg-promotion {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/img-bg-teatime.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 320px) {
+  .promotion-box {
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .promotion-box {
+    height: 50vh;
+    min-height: 400px;
+    padding: 6rem 2rem;
+    vertical-align: text-bottom;
+  }
+  .promotion-box h1 {
+    font-size: 3rem;
+  }
+}
+
+.promotion-container {
+  border-top: 10px solid #97D3D1;
+  box-shadow: 0px 0px 2px #888;
+}
+
+.promotion-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.brand-icon {
+  display: inline-block;
+  border-radius: 60px;
+  border-color: #D3A654;
+  border-width: thin;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  color: #D3A654;
+}
+
+.newsletter-container {
+  border-top: 8px solid #6ABAB9;
+  box-shadow: 0px 0px 2px #888;
+}
+
+@media (min-width: 320px) {
+  a.newsletter-button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  a.newsletter-button {
+    width: 80%;
+  }
+}
+
+input.email-input {
+  height: 100%;
+  border: 1px solid #E9E9E9;
+  border-radius: 25px;
+}
+
+input::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: #D3A654;
+}
+
 .text-primary {
   color: #2E1631 !important;
 }
@@ -317,6 +414,10 @@ header.masthead p {
 
 .btn-long {
   width: 40%;
+}
+
+.btn-xlong {
+  width: 80%;
 }
 
 .btn-primary {

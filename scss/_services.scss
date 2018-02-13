@@ -2,3 +2,10 @@
 .service-box {
   max-width: 400px;
 }
+
+.product-bg {
+  border-bottom: 8px solid $button-hover;
+  @media (min-width: 992px) {
+    background: linear-gradient(white 60%, $mygray 40%);
+  }
+}

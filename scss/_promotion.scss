@@ -1,0 +1,32 @@
+.bg-promotion {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url('../img/img-bg-teatime.jpg');
+  background-position: center center;
+  @include background-cover;
+}
+
+.promotion-box {
+  @media (min-width: 320px) {
+    padding: 6rem;
+  }
+  @media (min-width: 992px) {
+    height: 50vh;
+    min-height: 400px;
+    padding: 6rem 2rem;
+    vertical-align: text-bottom;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.promotion-container {
+  border-top: 10px solid $button;
+  box-shadow: 0px 0px 2px #888;
+}
+
+.promotion-text {
+  font-size: 18px;
+  line-height: 30px;
+}
