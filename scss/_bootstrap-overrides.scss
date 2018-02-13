@@ -28,13 +28,13 @@
   border-color: $button;
   &:hover {
     background-color: $button-hover;
+    background-image: url('../img/button-leaf.png') 3px 5px no-repeat;
   },
   &:focus,
   &:active {
     color: $white;
-    background-color: darken($button, 5%) !important;
+    //background-color: darken($button, 5%) !important;
   }
-
 }
 
 .btn-transparent {

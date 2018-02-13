@@ -64,6 +64,11 @@ footer {
 
 section {
   padding: 8rem 0;
+  position: relative;
+}
+
+.section-content {
+  min-height: 650px;
 }
 
 .section-heading {

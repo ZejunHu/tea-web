@@ -1,0 +1,31 @@
+.img-side {
+  height: 240px;
+  width: 160px;
+}
+
+.img-left {
+  position: absolute;
+  left: 0;
+  top: 12%;
+}
+
+.img-right {
+  position: absolute;
+  right: 0;
+  bottom: 12%
+}
+
+.img-quote-left {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  left: -10%;
+  transform: rotateY(180deg);
+}
+
+.img-quote-right {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  left: 90%;
+}
