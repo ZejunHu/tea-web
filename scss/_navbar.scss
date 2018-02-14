@@ -35,6 +35,9 @@
       }
     }
   }
+  .nav-logo, .nav-img-left, .nav-img-right {
+    display: none;
+  }
   @media (min-width: 992px) {
     border-color: transparent;
     background-color: transparent;
@@ -45,8 +48,16 @@
         color: $button;
       }
     }
+    .nav-logo-top {
+      display: inline-block;
+      position: absolute;
+      height: 90px;
+      width: 150px;
+      top: 23%;
+      left: 45%;
+    }
     .navbar-nav > li.nav-item > a.nav-link {
-      padding: 4.5rem 6rem;
+      padding: 4.5rem 4.5rem;
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -58,6 +69,7 @@
     &.navbar-shrink {
       border-bottom: 1px solid fade-out($subtitle, .9);
       background-color: $white;
+      box-shadow: 0px 0px 2px #888;
       .navbar-brand {
         color: $subtitle;
         &:focus,
@@ -65,9 +77,36 @@
           color: darken($primary, .1);
         }
       }
+      .nav-logo-top {
+        display: none;
+      }
+      .nav-logo-shrink {
+        display: inline-block;
+        position: absolute;
+        height: 54px;
+        width: 90px;
+        top: 10%;
+        left: 46.9%;
+      }
+      .nav-img-left {
+        position: absolute;
+        display: inline-block;
+        height: 2rem;
+        width: 5rem;
+        top: 0;
+        left: 0;
+      }
+      .nav-img-right {
+        position: absolute;
+        display: inline-block;
+        height: 2rem;
+        width: 5rem;
+        bottom: -0.05rem;
+        right: 0;
+      }
       .navbar-nav > li.nav-item > a.nav-link {
         color: $gray-900;
-        padding: 1rem 6rem;
+        padding: 1rem 4.5rem;
         &:hover {
           color: $button;
         }
@@ -82,6 +121,18 @@
   }
 }
 
-.logo {
-  transform: scale(0.15);
+.nav-item-left {
+  @media (min-width: 992px) {
+    margin-right: 120px;
+  }
+}
+
+.nav-item-right {
+  @media (min-width: 992px) {
+    margin-left: 120px;
+  }
+}
+
+.logo-container {
+  position: relative;
 }

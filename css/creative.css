@@ -145,6 +145,10 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+#mainNav .nav-logo, #mainNav .nav-img-left, #mainNav .nav-img-right {
+  display: none;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -156,8 +160,16 @@ img::-moz-selection {
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #97D3D1;
   }
+  #mainNav .nav-logo-top {
+    display: inline-block;
+    position: absolute;
+    height: 90px;
+    width: 150px;
+    top: 23%;
+    left: 45%;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 4.5rem 6rem;
+    padding: 4.5rem 4.5rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -170,6 +182,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(211, 166, 84, 0.1);
     background-color: #fff;
+    box-shadow: 0px 0px 2px #888;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #D3A654;
@@ -177,9 +190,36 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #fafafa;
   }
+  #mainNav.navbar-shrink .nav-logo-top {
+    display: none;
+  }
+  #mainNav.navbar-shrink .nav-logo-shrink {
+    display: inline-block;
+    position: absolute;
+    height: 54px;
+    width: 90px;
+    top: 10%;
+    left: 46.9%;
+  }
+  #mainNav.navbar-shrink .nav-img-left {
+    position: absolute;
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    top: 0;
+    left: 0;
+  }
+  #mainNav.navbar-shrink .nav-img-right {
+    position: absolute;
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    bottom: -0.05rem;
+    right: 0;
+  }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link {
     color: #212529;
-    padding: 1rem 6rem;
+    padding: 1rem 4.5rem;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #97D3D1;
@@ -194,8 +234,20 @@ img::-moz-selection {
   }
 }
 
-.logo {
-  transform: scale(0.15);
+@media (min-width: 992px) {
+  .nav-item-left {
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item-right {
+    margin-left: 120px;
+  }
+}
+
+.logo-container {
+  position: relative;
 }
 
 header.masthead {
@@ -471,7 +523,9 @@ input::-webkit-input-placeholder,
 
 .btn-primary:hover {
   background-color: #6ABAB9;
-  background-image: url("../img/button-leaf.png") 3px 5px no-repeat;
+  background-image: url("../img/button-leaf.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-primary, .btn-primary:focus, .btn-primary:active {
