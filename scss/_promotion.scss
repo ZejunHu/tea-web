@@ -11,13 +11,23 @@
     padding: 6rem;
   }
   @media (min-width: 992px) {
-    height: 50vh;
     min-height: 400px;
     padding: 6rem 2rem;
     vertical-align: text-bottom;
     h1 {
       font-size: 3rem;
     }
+  }
+}
+
+.promotion-img-box {
+  @media (min-width: 320px) {
+    padding: 1rem 2rem;
+  }
+  @media (min-width: 992px) {
+    min-height: 400px;
+    padding: 1rem 2rem;
+    vertical-align: text-bottom;
   }
 }
 
@@ -29,4 +39,8 @@
 .promotion-text {
   font-size: 18px;
   line-height: 30px;
+}
+
+.gray-box {
+  background-color: #d8d8d8;
 }

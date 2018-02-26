@@ -2,6 +2,8 @@ body,
 html {
   width: 100%;
   height: 100%;
+  color: #2E1631;
+  background-color: #FAFAFA;
 }
 
 body {
@@ -51,7 +53,7 @@ footer {
 }
 
 .bg-primary {
-  background-color: white !important;
+  background-color: #FAFAFA !important;
 }
 
 .bg-dark {
@@ -166,7 +168,7 @@ img::-moz-selection {
     height: 90px;
     width: 150px;
     top: 23%;
-    left: 46%;
+    left: 45.5%;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 4.5rem 4.5rem;
@@ -261,11 +263,6 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 header.masthead h1 {
   font-size: 2rem;
 }
@@ -298,6 +295,52 @@ header.masthead p {
   }
 }
 
+header.masthead-child-page {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead-child-page h1 {
+  font-size: 2rem;
+}
+
+header.masthead-child-page p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead-child-page p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead-child-page {
+    height: 50vh;
+    min-height: 450px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead-child-page h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead-child-page h1 {
+    font-size: 4rem;
+  }
+}
+
+header.masthead-about {
+  background-image: url("../img/about-us/about-header.png");
+}
+
 .service-box {
   max-width: 400px;
 }
@@ -308,7 +351,7 @@ header.masthead p {
 
 @media (min-width: 992px) {
   .product-bg {
-    background: linear-gradient(white 60%, #E9E9E9 40%);
+    background: linear-gradient(#FAFAFA 60%, #E9E9E9 40%);
   }
 }
 
@@ -400,13 +443,26 @@ header.masthead p {
 
 @media (min-width: 992px) {
   .promotion-box {
-    height: 50vh;
     min-height: 400px;
     padding: 6rem 2rem;
     vertical-align: text-bottom;
   }
   .promotion-box h1 {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .promotion-img-box {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .promotion-img-box {
+    min-height: 400px;
+    padding: 1rem 2rem;
+    vertical-align: text-bottom;
   }
 }
 
@@ -418,6 +474,10 @@ header.masthead p {
 .promotion-text {
   font-size: 18px;
   line-height: 30px;
+}
+
+.gray-box {
+  background-color: #d8d8d8;
 }
 
 .brand-icon {
@@ -465,13 +525,25 @@ input::-webkit-input-placeholder,
   width: 160px;
 }
 
-.img-left {
+.img-left-top {
   position: absolute;
   left: 0;
   top: 12%;
 }
 
-.img-right {
+.img-left-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 12%;
+}
+
+.img-right-top {
+  position: absolute;
+  right: 0;
+  top: 12%;
+}
+
+.img-right-bottom {
   position: absolute;
   right: 0;
   bottom: 12%;
@@ -480,16 +552,141 @@ input::-webkit-input-placeholder,
 .img-quote-left {
   position: relative;
   height: 60px;
-  width: 60px;
+  width: 120px;
   left: -10%;
-  transform: rotateY(180deg);
 }
 
 .img-quote-right {
   position: relative;
   height: 60px;
-  width: 60px;
+  width: 120px;
   left: 90%;
+}
+
+.bg-signature {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/about-us/about-sig.png");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .bg-signature {
+    min-height: 500px;
+  }
+}
+
+.sig-container {
+  border-top: 8px solid #6ABAB9;
+  box-shadow: 0px 0px 2px #888;
+  background-color: #FAFAFA;
+}
+
+.sig-container h1 {
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: -1rem;
+}
+
+.sig-container img {
+  padding: 0;
+  margin-bottom: -7.3rem;
+  transform: scale(0.5);
+  z-index: -1;
+}
+
+.sig-container p {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 900;
+  z-index: 10;
+  font-family: 'Assistant', serif;
+}
+
+.bg-about-contact {
+  height: 150vh;
+  padding: 0;
+  min-height: 600px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .bg-about-contact {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 320px) {
+  .about-contact-box {
+    padding: 6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-contact-box {
+    padding: 6rem 2rem;
+    vertical-align: text-bottom;
+    border-bottom: 10px solid #97D3D1;
+  }
+  .about-contact-box h1 {
+    font-size: 3rem;
+  }
+}
+
+.about-contact-container {
+  box-shadow: 0px 0px 2px #888;
+}
+
+.about-contact-text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-contact-img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-map {
+  height: 150vh;
+  min-height: 600px;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  .contact-map {
+    height: 100vh;
+  }
+}
+
+.contact-upper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media (min-width: 320px) {
+  .contact-upper {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-upper {
+    width: 70vw;
+  }
+}
+
+#hide-map-btn {
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+  z-index: 1;
 }
 
 .text-primary {
