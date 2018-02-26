@@ -685,8 +685,9 @@ input::-webkit-input-placeholder,
 #hide-map-btn {
   position: absolute;
   left: 3%;
-  bottom: 3%;
+  bottom: 5%;
   z-index: 1;
+  width: 200px;
 }
 
 .text-primary {
