@@ -69,7 +69,7 @@ footer {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 7rem 0;
   position: relative;
 }
 
@@ -115,12 +115,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #FAFAFA;
+  color: #2E1631;
   font-family: 'Assistant', serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fafafa;
+  color: #2e1631;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -157,6 +157,7 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
+    display: none;
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -184,7 +185,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(211, 166, 84, 0.1);
     background-color: #fff;
-    box-shadow: 0px 0px 2px #888;
+    box-shadow: 0px 2px 4px 0px #828282;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #D3A654;
@@ -220,7 +221,7 @@ img::-moz-selection {
     right: 0;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link {
-    color: #212529;
+    color: #2E1631;
     padding: 1rem 4.5rem;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover {
@@ -228,7 +229,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #D3A654;
+    color: #2E1631;
   }
   #mainNav.navbar-shrink :hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
@@ -339,6 +340,10 @@ header.masthead-child-page p {
 
 header.masthead-about {
   background-image: url("../img/about-us/about-header.png");
+}
+
+header.masthead-item {
+  background-image: url("../img/our-tea/tea-header.png");
 }
 
 .service-box {
@@ -521,8 +526,8 @@ input::-webkit-input-placeholder,
 }
 
 .img-side {
-  height: 240px;
-  width: 160px;
+  height: 12rem;
+  width: 8rem;
 }
 
 .img-left-top {
@@ -615,7 +620,7 @@ input::-webkit-input-placeholder,
 
 @media (min-width: 992px) {
   .bg-about-contact {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
@@ -658,7 +663,7 @@ input::-webkit-input-placeholder,
 
 @media (min-width: 992px) {
   .contact-map {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
@@ -688,6 +693,134 @@ input::-webkit-input-placeholder,
   bottom: 5%;
   z-index: 1;
   width: 200px;
+}
+
+.about-tea-block {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .about-tea-block {
+    text-align: left;
+  }
+}
+
+.about-tea-title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.about-tea-description {
+  vertical-align: middle;
+}
+
+.about-tea-icon {
+  height: 4rem;
+  width: 3.6rem;
+}
+
+.about-tea-icon-fix {
+  height: 4rem;
+  width: 4rem;
+}
+
+.about-tea-icon-moon-fix {
+  height: 4rem;
+  width: 5rem;
+}
+
+.tea-tab {
+  margin: 1rem 0.1rem;
+  padding: 0;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.tea-tab1 {
+  background-image: url("../img/our-tea/tea-tab1.png");
+}
+
+.tea-tab2 {
+  background-image: url("../img/our-tea/tea-tab2.png");
+}
+
+.tea-tab3 {
+  background-image: url("../img/our-tea/tea-tab3.png");
+}
+
+.tea-tab4 {
+  background-image: url("../img/our-tea/tea-tab4.png");
+}
+
+.tea-tab5 {
+  background-image: url("../img/our-tea/tea-tab5.png");
+}
+
+.tea-tab-img {
+  width: 100%;
+}
+
+a.tea-tab {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+a.tea-tab > p {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+a.tea-tab:hover {
+  background-color: #FAFAFA;
+  background-image: url("../img/button-leaf.png");
+  background-size: 5rem 3.2rem;
+  border-top: 0.3rem solid #6ABAB9;
+  box-shadow: 0px 0px 2px #888;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.tea-tab {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  div.tea-tab {
+    display: inline-block;
+  }
+}
+
+.our-tea-section-describe {
+  padding: 4rem 0;
+}
+
+.our-tea-section-brew {
+  padding: 0;
+}
+
+.img-brewing-info {
+  height: 5rem;
+  width: 5rem;
+}
+
+.img-brewing-info-wider-fix {
+  height: 5rem;
+  width: 6rem;
+}
+
+.img-brewing-info-thinner-fix {
+  height: 5rem;
+  width: 4rem;
 }
 
 .text-primary {
@@ -724,6 +857,8 @@ input::-webkit-input-placeholder,
   background-image: url("../img/button-leaf.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 5rem 3.2rem;
+  box-shadow: 1px 1px 4px 0px black;
 }
 
 .btn-primary, .btn-primary:focus, .btn-primary:active {

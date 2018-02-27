@@ -250,7 +250,7 @@
       map: map
     });
   }
-  initMap();
+  google.maps.event.addDomListener(window, "load", initMap);
 
   $("#show-map-btn").click(function() {
     $("#contact-box").hide();

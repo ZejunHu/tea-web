@@ -1,0 +1,31 @@
+.about-tea-block {
+  text-align: center;
+  margin-top: 20px;
+  @media (min-width: 576px) {
+    text-align: left;
+  }
+}
+
+.about-tea-title {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.about-tea-description {
+  vertical-align: middle;
+}
+
+.about-tea-icon {
+  height: 4rem;
+  width: 3.6rem;
+}
+
+.about-tea-icon-fix {
+  height: 4rem;
+  width: 4rem;
+}
+
+.about-tea-icon-moon-fix {
+  height: 4rem;
+  width: 5rem;
+}

@@ -1,6 +1,6 @@
 .img-side {
-  height: 240px;
-  width: 160px;
+  height: 12rem;
+  width: 8rem;
 }
 
 .img-left-top {
@@ -8,6 +8,15 @@
   left: 0;
   top: 12%;
 }
+
+// .img-left-top-spoon {
+//   height: 12rem;
+//   width: 16rem;
+//   position: absolute;
+//   left: -3%;
+//   top: 12%;
+//   transform: scaleX(-1);
+// }
 
 .img-left-bottom {
   position: absolute;
