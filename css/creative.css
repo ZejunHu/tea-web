@@ -495,6 +495,10 @@ header.masthead-item {
   color: #D3A654;
 }
 
+.brand-icon:hover {
+  background-color: #97D3D1;
+}
+
 .newsletter-container {
   border-top: 8px solid #6ABAB9;
   box-shadow: 0px 0px 2px #888;
