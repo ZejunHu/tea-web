@@ -536,6 +536,11 @@ input::-webkit-input-placeholder,
   top: 12%;
 }
 
+.img-side-spoon {
+  height: 10rem;
+  width: 12rem;
+}
+
 .img-left-bottom {
   position: absolute;
   left: 0;
@@ -703,6 +708,15 @@ input::-webkit-input-placeholder,
 @media (min-width: 576px) {
   .about-tea-block {
     text-align: left;
+    padding-left: 4rem;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-tea-hero {
+    padding-right: 4rem;
+    padding-left: 0;
   }
 }
 
@@ -805,7 +819,7 @@ div.tea-tab {
 }
 
 .our-tea-section-brew {
-  padding: 0;
+  padding: 1rem 0;
 }
 
 .img-brewing-info {
@@ -857,7 +871,7 @@ div.tea-tab {
   background-image: url("../img/button-leaf.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 5rem 3.2rem;
+  background-size: 5rem 2.8rem;
   box-shadow: 1px 1px 4px 0px black;
 }
 
