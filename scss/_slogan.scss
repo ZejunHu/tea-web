@@ -4,4 +4,10 @@
   @include satisfy;
   line-height: 45px;
   font-size: 36px;
+  padding: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  @media (min-width: 768px) {
+    margin-bottom: 1rem;
+  }
 }

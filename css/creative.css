@@ -123,7 +123,11 @@ img::-moz-selection {
   color: #2e1631;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+  color: white;
+}
+
+#mainNav .navbar-nav > li.nav-item,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
   font-weight: 700;
@@ -131,18 +135,18 @@ img::-moz-selection {
   color: #212529;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item :hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #97D3D1;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item .active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
   color: #D3A654 !important;
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item .active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
   background-color: transparent;
 }
@@ -173,10 +177,6 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 4.5rem 4.5rem;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
@@ -427,6 +427,15 @@ header.masthead-item {
   font-family: 'Satisfy', serif;
   line-height: 45px;
   font-size: 36px;
+  padding: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .slogan-text {
+    margin-bottom: 1rem;
+  }
 }
 
 .bg-promotion {
@@ -442,7 +451,7 @@ header.masthead-item {
 
 @media (min-width: 320px) {
   .promotion-box {
-    padding: 6rem;
+    padding: 2rem;
   }
 }
 
@@ -564,17 +573,19 @@ input::-webkit-input-placeholder,
 }
 
 .img-quote-left {
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 120px;
-  left: -10%;
+  left: 0;
+  top: 30%;
 }
 
 .img-quote-right {
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 120px;
-  left: 90%;
+  right: 0;
+  bottom: 15%;
 }
 
 .bg-signature {
@@ -884,9 +895,45 @@ div.tea-tab {
 }
 
 .btn-transparent {
+  width: 50%;
+  height: 20%;
+  font-size: 22px;
   background-color: transparent;
-  border-width: medium;
+  border-width: 2px;
   border-style: solid;
   border-color: #97D3D1;
   color: #97D3D1;
+}
+
+.btn-transparent:hover {
+  background-color: #97D3D1;
+  color: white;
+}
+
+@media (min-width: 320px) {
+  .btn-transparent {
+    width: 36%;
+    height: 25%;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-transparent {
+    width: 22%;
+    height: 28%;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-transparent {
+    height: 32%;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-transparent {
+    line-height: 2.5rem;
+    width: 11rem;
+    height: 3.5rem;
+  }
 }

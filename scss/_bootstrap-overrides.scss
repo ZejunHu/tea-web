@@ -42,9 +42,32 @@
 }
 
 .btn-transparent {
+  width: 50%;
+  height: 20%;
+  font-size: 22px;
   background-color: transparent;
-  border-width: medium;
+  border-width: 2px;
   border-style: solid;
   border-color: $button;
   color: $button;
+  &:hover {
+    background-color: $button;
+    color: white;
+  }
+  @media (min-width: 320px) {
+    width: 36%;
+    height: 25%;
+  }
+  @media (min-width: 576px) {
+    width: 22%;
+    height: 28%;
+  }
+  @media (min-width: 768px) {
+    height: 32%;
+  }
+  @media (min-width: 992px) {
+    line-height: 2.5rem;
+    width: 11rem;
+    height: 3.5rem;
+  }
 }

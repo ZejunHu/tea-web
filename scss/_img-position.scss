@@ -33,15 +33,17 @@
 }
 
 .img-quote-left {
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 120px;
-  left: -10%;
+  left: 0;
+  top: 30%;
 }
 
 .img-quote-right {
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 120px;
-  left: 90%;
+  right: 0;
+  bottom: 15%;
 }
