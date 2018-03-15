@@ -17,7 +17,10 @@
   .navbar-nav {
     > li.nav-item {
        > a.nav-link {
-         color: white;
+         color: $main-content;
+         @media (min-width: 992px) {
+           color: white;
+         }
        },
       > a.nav-link:focus {
         font-size: .9rem;

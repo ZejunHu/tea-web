@@ -124,7 +124,13 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
-  color: white;
+  color: #2E1631;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    color: white;
+  }
 }
 
 #mainNav .navbar-nav > li.nav-item,
