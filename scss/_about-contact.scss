@@ -12,6 +12,9 @@
   padding: 0;
   min-height: 600px;
   position: relative;
+  @include background-cover;
+  background-image: url('../img/about-us/map.png');
+  background-position: center center;
   @media (min-width: 992px) {
     height: 90vh;
   }
