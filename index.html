@@ -59,7 +59,7 @@
       <img src="img/img-leaves-navright.png" class="nav-img-right lazyload">
     </nav>
 
-    <header class="masthead text-center text-white d-flex lazyload" data-bg="img/img-bg-header1-md.jpg">
+    <header class="masthead text-center text-white d-flex lazyload" data-bgset="img/img-bg-header1.png 720w, img/img-bg-header1-md.jpg 1440w" data-sizes="auto">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -248,6 +248,13 @@
 
     <footer class="bg-dark text-center text-white footer">© 2018 Pamela  Inc.  All rights reserved.</footer>
 
+    <script>
+        function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+        if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+            loadJS("vendor/lazysizes/plugins/respimg/ls.respimg.min.js");
+        }
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -257,7 +264,8 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <script src="vendor/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
+    <script src="vendor/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
+    <!-- <script src="vendor/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js"></script> -->
     <script src="vendor/lazysizes/lazysizes.min.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSqdfEOZIg3hI9CcFJHX8q2m5gmA3uy_o"
