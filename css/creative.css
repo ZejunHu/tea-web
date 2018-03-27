@@ -258,6 +258,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-position: center center;
+  align-items: flex-end;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -300,6 +301,7 @@ header.masthead-child-page {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-position: center center;
+  align-items: flex-end;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

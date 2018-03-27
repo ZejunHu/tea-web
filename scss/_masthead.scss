@@ -4,6 +4,7 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   //background-image: url('../img/img-bg-header1-md.jpg');
   background-position: center center;
+  align-items: flex-end;
   @include background-cover;
   h1 {
     font-size: 2rem;
@@ -36,6 +37,7 @@ header.masthead-child-page {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-position: center center;
+  align-items: flex-end;
   @include background-cover;
   h1 {
     font-size: 2rem;
