@@ -26,6 +26,10 @@
 .btn-primary {
   background-color: $button;
   border-color: $button;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
   &:hover {
     background-color: $button-hover;
     background-image: url('../img/button-leaf.png');
@@ -37,8 +41,16 @@
   &:focus,
   &:active {
     color: $white;
+    background-color: $button;
+    border-color: $button;
     //background-color: darken($button, 5%) !important;
   }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: $white;
+  background-color: $button-hover;
+  border-color: $button-hover;
 }
 
 .btn-transparent {

@@ -887,6 +887,10 @@ div.tea-tab {
 .btn-primary {
   background-color: #97D3D1;
   border-color: #97D3D1;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .btn-primary:hover {
@@ -900,6 +904,14 @@ div.tea-tab {
 
 .btn-primary, .btn-primary:focus, .btn-primary:active {
   color: #fff;
+  background-color: #97D3D1;
+  border-color: #97D3D1;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #6ABAB9;
+  border-color: #6ABAB9;
 }
 
 .btn-transparent {
