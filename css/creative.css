@@ -459,7 +459,7 @@ header.masthead-item {
 
 @media (min-width: 992px) {
   .promotion-box {
-    min-height: 400px;
+    min-height: 300px;
     padding: 6rem 2rem;
     vertical-align: text-bottom;
   }
@@ -470,15 +470,27 @@ header.masthead-item {
 
 @media (min-width: 320px) {
   .promotion-img-box {
-    padding: 1rem 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .promotion-img-box {
+    padding: 6rem;
   }
 }
 
 @media (min-width: 992px) {
   .promotion-img-box {
-    min-height: 400px;
-    padding: 1rem 2rem;
+    min-height: 300px;
+    padding: 10rem 2rem 1rem 2rem;
     vertical-align: text-bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion-img-box {
+    padding: 6rem 2rem 1rem 2rem;
   }
 }
 
@@ -579,7 +591,7 @@ input::-webkit-input-placeholder,
   height: 60px;
   width: 120px;
   left: 0;
-  top: 30%;
+  top: 19%;
 }
 
 .img-quote-right {
@@ -587,7 +599,7 @@ input::-webkit-input-placeholder,
   height: 60px;
   width: 120px;
   right: 0;
-  bottom: 15%;
+  bottom: 22%;
 }
 
 .bg-signature {
