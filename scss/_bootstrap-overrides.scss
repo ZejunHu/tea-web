@@ -13,14 +13,17 @@
 
 .btn-xl {
   width: 25%;
+  min-width: 130px;
 }
 
 .btn-long {
   width: 40%;
+  min-width: 130px;
 }
 
 .btn-xlong {
   width: 80%;
+  min-width: 130px;
 }
 
 .btn-primary {
@@ -54,32 +57,49 @@
 }
 
 .btn-transparent {
-  width: 50%;
-  height: 20%;
+  width: 176px;
+  height: 56px;
+  padding-top: 8px;
   font-size: 22px;
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
   border-color: $button;
   color: $button;
+  display: block;
+  &:hover {
+    background-color: $button;
+    color: $white;
+    .btn-info-goto {
+      font-weight: bold;
+      color: $white;
+    }
+    .btn-info-current {
+      color: $button;
+    }
+  }
+
+}
+
+.btn-transparent-zhCN {
+  width: 13rem;
+  height: 3rem;
+  font-size: 20px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $button;
+  color: $button;
+  display: block;
   &:hover {
     background-color: $button;
     color: white;
-  }
-  @media (min-width: 320px) {
-    width: 36%;
-    height: 25%;
-  }
-  @media (min-width: 576px) {
-    width: 22%;
-    height: 28%;
-  }
-  @media (min-width: 768px) {
-    height: 32%;
-  }
-  @media (min-width: 992px) {
-    line-height: 2.5rem;
-    width: 11rem;
-    height: 3.5rem;
+    .btn-info-goto {
+      font-weight: bold;
+      color: $white;
+    }
+    .btn-info-current {
+      color: $button;
+    }
   }
 }

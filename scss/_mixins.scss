@@ -11,14 +11,24 @@
   background-size: cover;
 }
 @mixin assistant() {
-  font-family: 'Assistant', serif;
+  font-family: 'Assistant', serif, fangzheng-zhengxian;
 }
 @mixin berkshire-swash() {
-  font-family: 'Berkshire Swash', serif;
+  font-family: 'Berkshire Swash', serif, fangzheng-zhengxian;
 }
 @mixin times-new-roman() {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif, fangzheng-zhengxian;
 }
 @mixin satisfy() {
-  font-family: 'Satisfy', serif;
+  font-family: 'Satisfy', serif, shuxin-kaijian;
+}
+
+@font-face {
+  font-family: fangzheng-zhengxian;
+  src: url('../vendor/font/方正正纤黑简体.TTF');
+}
+
+@font-face {
+  font-family: shuxin-kaijian;
+  src: url('../vendor/font/苏新诗柳楷简.ttf');
 }
